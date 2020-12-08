@@ -1,6 +1,6 @@
 # ClaimDetective-Training
 
-This repo contains the code used to train [ClaimDetective](https://github.com/lawrence-chillrud/ClaimDetective), a check-worthiness / claim detection classification model made by fine-tuning RoBERTa under-the-hood.
+This repo contains the code used to train [ClaimDetective](https://github.com/lawrence-chillrud/ClaimDetective), a check-worthiness / claim detection classification model made by fine-tuning RoBERTa under-the-hood. Much of this code was made to reproduce results from [Williams et. al.](https://arxiv.org/abs/2009.02431)
 
 ## Code Overview
 
@@ -28,9 +28,9 @@ When fine-tuning RoBERTa for claim-detection, 3 different datasets were used in 
 In no particular order:
 
 1. Implement loss functions in varying combinations to see if they help model performance.
-    * Ranking loss from: 
-    * Adversarial loss from:
-    * Consistency loss from:
+    * Contrastive Sampling Ranking loss from: [Hansen et. al.](http://ceur-ws.org/Vol-2380/paper_56.pdf)
+    * Adversarial loss from: [Meng et. al.](https://arxiv.org/abs/2002.07725)
+    * Consistency loss from: [Xie et. al.](https://arxiv.org/abs/1904.12848)
 
 2. Use the `.json` files from the ClaimBuster dataset to train the model instead of the `.csv` files...  
 
