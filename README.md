@@ -23,6 +23,11 @@ When fine-tuning RoBERTa for claim-detection, 3 different datasets were used in 
 
 ## Workflow
 
+Description of workflow and available arguments passed to `roberta.py` coming soon. For now, run the following for information:
+```
+python roberta.py --help
+```
+
 ## To Do
 
 In no particular order:
@@ -32,5 +37,7 @@ In no particular order:
     * Adversarial loss from: [Meng et. al.](https://arxiv.org/abs/2002.07725)
     * Consistency loss from: [Xie et. al.](https://arxiv.org/abs/1904.12848)
 
-2. Use the `.json` files from the ClaimBuster dataset to train the model instead of the `.csv` files...  
+2. Use the `.json` files from the ClaimBuster dataset to train the model instead of the `.csv` files... 
+
+3. Send misclassified examples to colleagues... 
 
